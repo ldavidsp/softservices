@@ -2,10 +2,11 @@
 
 (() => {
 	document.getElementById('btn-send').addEventListener('click', (event) => {
-		document.querySelectorAll('input, select').forEach((value, key, parent) => {
+		document.querySelectorAll('input.input-form, select.input-form').forEach((value, key, parent) => {
 			if (value.value !== '') {
-				alert("Todos los datos son correctos")
+				alert('El campo "'+ value.id+'" es valido.');
 			} else {
+				console.log(value);
 				alert('El campo "'+ value.id+'" es requerido.');
 			}
 		});
