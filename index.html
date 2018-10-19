@@ -3,22 +3,23 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Web App</title>
+	<link rel="stylesheet" href="assets/css/app.css">
 </head>
 <body>
 
 <div class="is-content">
 	<div class="content">
 
-		<form class="is-form">
+		<form class="is-form shadow">
 			<h1 class="form-title">Contact Form</h1>
 			<div class="form">
-				<div class="input-group">
+				<div class="form-group">
 					<input type="text" id="first_name" class="input-form" placeholder="Nombres"/>
 					<input type="text" id="last_name" class="input-form" placeholder="Apellidos"/>
 				</div>
 
-				<div class="input-group">
-					<input type="number" id="age" class="input-form" placeholder="Edad"/>
+				<div class="form-group">
+					<input type="number" id="age" class="input-form age" placeholder="Edad"/>
 					<select class="input-form" id="sex">
 						<option value="AF">Afganistán</option>
 						<option value="AL">Albania</option>
@@ -255,17 +256,23 @@
 						<option value="ZM">Zambia</option>
 						<option value="ZW">Zimbabue</option>
 					</select>
-					<input type="text" id="address" class="input-form" placeholder="Domicilio"/>
 				</div>
 
-				<div class="input-group">
+				<div class="form-group">
+					<input type="text" id="address" class="input-form address" placeholder="Domicilio"/>
+				</div>
+
+				<div class="form-group">
 					<select class="input-form" id="country">
 						<option value="M">Masculino</option>
 						<option value="F">Femenino</option>
 					</select>
-					<input type="text" id="phone" class="input-form" placeholder="N# Telefono"/>
+					<input type="text" id="phone" class="input-form phone" placeholder="N# Telefono"/>
 				</div>
 
+				<div class="form-btn">
+					<input type="button" class="btn-send" id="btn-send" value="Enviar datos"/>
+				</div>
 			</div>
 		</form>
 
