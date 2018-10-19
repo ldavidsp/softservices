@@ -20,7 +20,8 @@
 
 				<div class="form-group">
 					<input type="number" id="age" class="input-form age" placeholder="Edad"/>
-					<select class="input-form" id="sex">
+					<select class="input-form country" id="country">
+						<option value="" selected>Seleccione pais</option>
 						<option value="AF">Afganistán</option>
 						<option value="AL">Albania</option>
 						<option value="DE">Alemania</option>
@@ -85,7 +86,7 @@
 						<option value="AE">Emiratos Árabes Unidos</option>
 						<option value="ER">Eritrea</option>
 						<option value="SI">Eslovenia</option>
-						<option value="ES" selected>España</option>
+						<option value="ES">España</option>
 						<option value="US">Estados Unidos</option>
 						<option value="EE">Estonia</option>
 						<option value="ET">Etiopía</option>
@@ -263,7 +264,8 @@
 				</div>
 
 				<div class="form-group">
-					<select class="input-form" id="country">
+					<select class="input-form sex" id="sex">
+						<option value="" selected>Seleccione sexo</option>
 						<option value="M">Masculino</option>
 						<option value="F">Femenino</option>
 					</select>
@@ -271,7 +273,7 @@
 				</div>
 
 				<div class="form-btn">
-					<input type="button" class="btn-send" id="btn-send" value="Enviar datos"/>
+					<a class="btn-send" id="btn-send">Enviar datos</a>
 				</div>
 			</div>
 		</form>
